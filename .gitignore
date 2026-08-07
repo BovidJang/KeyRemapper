@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+build/
+dist/
+*.spec
+error.log
+hook_log.txt
+profiles.json
+.claude/
+test_log.txt
