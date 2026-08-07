@@ -1,10 +1,10 @@
 <div align="center">
 
-# ⌨️ KeyRemapper
+# KeyRemapper
 
 **一款轻量级 Windows 游戏按键重映射工具**
 
-把 WASD 映射成方向键、鼠标侧键映射成技能键、一键触发宏连招——只在游戏窗口生效，不影响其他应用。
+KeyRemapper是一款轻量级的 Windows 按键重映射工具，专为游戏设计。通过WH_KEYBOARD_LL在操作系统层面拦截并替换按键，可以对游戏厂商不允许修改的特定操作按键进行修改。
 
 [![Python](https://img.shields.io/badge/Python-3.6+-blue?logo=python&logoColor=white)](https://www.python.org/)
 [![Platform](https://img.shields.io/badge/Platform-Windows-0078d4?logo=windows&logoColor=white)]()
@@ -19,13 +19,13 @@
 
 </div>
 
-## ✨ 功能特性
+## 功能特性
 
 <table>
 <tr>
 <td width="50%">
 
-**🎯 精准映射**
+**精准映射**
 - 键盘按键 → 键盘按键
 - 鼠标按键 → 键盘按键
 - 支持所有标准键、功能键、小键盘键
@@ -33,17 +33,16 @@
 </td>
 <td width="50%">
 
-**🔗 按键宏**
+**按键宏**
 - 单键触发多键连招
 - 键盘 + 鼠标操作混合编排
-- 内置 Ctrl+C 宏示例
 
 </td>
 </tr>
 <tr>
 <td>
 
-**🖱️ 鼠标支持**
+**鼠标支持**
 - 左键 / 右键 / 中键
 - 上滚轮 / 下滚轮
 - 上侧键 / 下侧键
@@ -51,7 +50,7 @@
 </td>
 <td>
 
-**📋 多配置管理**
+**多配置管理**
 - 多游戏独立配置
 - 每游戏多预设方案
 - 一键导入 / 导出分享
@@ -60,15 +59,17 @@
 </tr>
 </table>
 
-> **🔒 安全可靠** — 基于 `WH_KEYBOARD_LL` 低级键盘钩子，在 OS 层拦截按键，不修改游戏内存，不注入 DLL，不影响系统其他应用。
+> **安全可靠** — 基于 `WH_KEYBOARD_LL` 低级键盘钩子，在 OS 层拦截按键，不修改游戏内存，不注入 DLL，不影响系统其他应用。
 
-## 🚀 快速开始
+## 快速开始
 
 ### 方式一：直接运行 EXE（推荐）
 
-从 [Releases](https://github.com/BovidJang/KeyRemapper/tree/main/dist) 下载最新版本exe，双击运行即可。
+从 [Releases](https://github.com/BovidJang/KeyRemapper/) 下载最新版本，双击运行即可。
+该方法已弃用，项目仓库将不再提供exe程序
+可以通过百度网盘进行下载[百度网盘](https://pan.baidu.com/s/1B79VTxpZ7Mkjq55YTDMKlQ?pwd=evwr)
 
-> ⚠️ **需要以管理员身份运行**（右键 → 以管理员身份运行）
+> **需要以管理员身份运行**（右键 → 以管理员身份运行）
 
 ### 方式二：从源码构建
 
@@ -92,7 +93,7 @@ python main.py
 
 > 需要 Python 3.6+ 环境
 
-## 📖 使用指南
+## 使用指南
 
 > **Step 1** → 选择目标游戏窗口
 > **Step 2** → 点击键盘按键进行绑定
@@ -107,7 +108,7 @@ python main.py
 
 ### 鼠标映射
 
-1. 在左侧鼠标列表中点击要映射的鼠标按键
+1. 在右侧鼠标列表中点击要映射的鼠标按键
 2. 按下键盘上的目标按键完成绑定
 
 ### 按键宏
@@ -121,7 +122,7 @@ python main.py
 - **导出**：点击「导出预设」→ 复制字符串 → 发给朋友
 - **导入**：点击「导入预设」→ 粘贴字符串 → 自动还原配置
 
-## ⚙️ 配置说明
+## 配置说明
 
 配置文件 `profiles.json` 自动保存在程序同目录：
 
@@ -153,7 +154,7 @@ python main.py
 | `mouse_bindings` | 鼠标→键盘映射 `{鼠标VK码: 键盘VK码}` |
 | `mouse_button_macro` | 鼠标宏 `{鼠标VK码: [操作序列]}` |
 
-## ❓ 常见问题
+## 常见问题
 
 <details>
 <summary><b>启动后按什么都没反应？</b></summary>
@@ -187,7 +188,7 @@ python main.py
 3. 关闭正在运行的旧版 exe
 </details>
 
-## 🛠️ 技术栈
+## 技术栈
 
 | 组件 | 技术 |
 |------|------|
@@ -207,7 +208,7 @@ python main.py
            原键被拦截（返回 -1）
 ```
 
-## 📁 项目结构
+## 项目结构
 
 ```
 KeyRemapper/
@@ -223,16 +224,17 @@ KeyRemapper/
 └── README.md            # 说明文档
 ```
 
-## 📄 License
+## License
 
 [MIT License](LICENSE) - 自由使用、修改和分发。
 
-## 👤 Author
+## Author
 
 **BovidJang**
 
 - BiliBili: [@BovidJang](https://space.bilibili.com/551892641/dynamic)
 - GitHub: [@BovidJang](https://github.com/BovidJang)
+- Email: bovidjang@foxmail.com
 
 ---
 
